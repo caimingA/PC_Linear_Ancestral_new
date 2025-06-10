@@ -1,0 +1,106 @@
+2025-06-06 13:16:54,423 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:16:54,444 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2025-06-06 13:16:54,767 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2025-06-06 13:16:55,458 INFO - models.gae - Model summary:
+2025-06-06 13:16:55,458 INFO - models.gae - ---------
+2025-06-06 13:16:55,458 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:16:55,458 INFO - models.gae - ---------
+2025-06-06 13:16:55,459 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:16:55,459 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:16:55,459 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:16:55,459 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:16:55,459 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:16:55,460 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:16:55,460 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:16:55,460 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:16:55,460 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:16:55,460 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:16:55,461 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:16:55,461 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:16:55,461 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:16:55,461 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:16:55,461 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:16:55,525 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:16:55,526 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:16:56,375 INFO - trainers.al_trainer - [Iter 1] loss 1.842E+01, mse 3.601E+03, acyclic 1.363E-07, shd 25, tpr 1.000, fdr 0.732, pred_size 41
+2025-06-06 13:16:56,382 INFO - trainers.al_trainer - rho 1.000E+00, alpha 1.363E-07
+2025-06-06 13:16:56,979 INFO - trainers.al_trainer - rho 1.000E+01, alpha 1.363E-07
+2025-06-06 13:16:57,695 INFO - trainers.al_trainer - rho 1.000E+02, alpha 1.363E-07
+2025-06-06 13:16:58,302 INFO - trainers.al_trainer - rho 1.000E+03, alpha 1.363E-07
+2025-06-06 13:16:58,801 INFO - trainers.al_trainer - rho 1.000E+04, alpha 1.363E-07
+2025-06-06 13:16:59,289 INFO - trainers.al_trainer - rho 1.000E+05, alpha 1.363E-07
+2025-06-06 13:16:59,742 INFO - trainers.al_trainer - rho 1.000E+06, alpha 1.363E-07
+2025-06-06 13:17:00,213 INFO - trainers.al_trainer - rho 1.000E+07, alpha 1.363E-07
+2025-06-06 13:17:00,651 INFO - trainers.al_trainer - rho 1.000E+08, alpha 1.363E-07
+2025-06-06 13:17:01,106 INFO - trainers.al_trainer - rho 1.000E+09, alpha 1.363E-07
+2025-06-06 13:17:01,556 INFO - trainers.al_trainer - rho 1.000E+10, alpha 1.363E-07
+2025-06-06 13:17:01,991 INFO - trainers.al_trainer - rho 1.000E+11, alpha 1.363E-07
+2025-06-06 13:17:02,476 INFO - trainers.al_trainer - rho 1.000E+12, alpha 1.363E-07
+2025-06-06 13:17:02,957 INFO - trainers.al_trainer - rho 1.000E+13, alpha 1.363E-07
+2025-06-06 13:17:03,442 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.363E-07
+2025-06-06 13:17:03,900 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.363E-07
+2025-06-06 13:17:04,373 INFO - trainers.al_trainer - [Iter 2] loss 2.058E+01, mse 4.012E+03, acyclic 1.701E-08, shd 21, tpr 0.909, fdr 0.688, pred_size 32
+2025-06-06 13:17:04,380 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.701E+07
+2025-06-06 13:17:04,905 INFO - trainers.al_trainer - rho 1.000E+16, alpha 1.701E+07
+2025-06-06 13:17:05,366 INFO - trainers.al_trainer - rho 1.000E+17, alpha 1.701E+07
+2025-06-06 13:17:05,834 INFO - trainers.al_trainer - [Iter 3] loss 2.198E+01, mse 4.310E+03, acyclic 1.644E-09, shd 26, tpr 0.636, fdr 0.794, pred_size 34
+2025-06-06 13:17:05,841 INFO - trainers.al_trainer - rho 1.000E+17, alpha 1.814E+08
+2025-06-06 13:17:06,370 INFO - trainers.al_trainer - [Iter 4] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,373 INFO - trainers.al_trainer - [Iter 5] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,374 INFO - trainers.al_trainer - [Iter 6] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,376 INFO - trainers.al_trainer - [Iter 7] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,377 INFO - trainers.al_trainer - [Iter 8] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,378 INFO - trainers.al_trainer - [Iter 9] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,379 INFO - trainers.al_trainer - [Iter 10] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,381 INFO - trainers.al_trainer - [Iter 11] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,382 INFO - trainers.al_trainer - [Iter 12] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,384 INFO - trainers.al_trainer - [Iter 13] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,386 INFO - trainers.al_trainer - [Iter 14] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,387 INFO - trainers.al_trainer - [Iter 15] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,390 INFO - trainers.al_trainer - [Iter 16] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,391 INFO - trainers.al_trainer - [Iter 17] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,393 INFO - trainers.al_trainer - [Iter 18] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,394 INFO - trainers.al_trainer - [Iter 19] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:06,395 INFO - trainers.al_trainer - [Iter 20] loss 2.184E+01, mse 4.233E+03, acyclic 1.713E-09, shd 20, tpr 0.727, fdr 0.714, pred_size 28
+2025-06-06 13:17:07,191 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-16-54-422/model/
+2025-06-06 13:17:07,198 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:17:08,321 INFO - models.gae - Model summary:
+2025-06-06 13:17:08,323 INFO - models.gae - ---------
+2025-06-06 13:17:08,324 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:17:08,324 INFO - models.gae - ---------
+2025-06-06 13:17:08,325 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:17:08,326 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:17:08,327 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:17:08,329 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:17:08,329 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:17:08,330 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:17:08,331 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:17:08,332 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:17:08,333 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:17:08,333 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:17:08,333 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:17:08,334 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:17:08,334 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:17:08,335 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:17:08,335 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:17:08,414 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:17:08,414 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:17:08,415 CRITICAL - helpers.log_helper - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 419, in <module>
+    W_est= main(n=100, p=len(data_array_sachs), data=data_array_sachs_data_temp, W=data_array_sachs)
+  File "main.py", line 249, in main
+    args.max_iter, args.iter_step, output_dir)
+  File "C:\code_old\code\python\PC_Linear_Ancestral_experiment_4\GAE\src\trainers\al_trainer.py", line 52, in train
+    loss_new, mse_new, h_new, W_new = self.train_step(model, iter_step, X, rho, alpha)
+  File "C:\code_old\code\python\PC_Linear_Ancestral_experiment_4\GAE\src\trainers\al_trainer.py", line 94, in train_step
+    model.lr: self.learning_rate})
+  File "C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\client\session.py", line 929, in run
+    run_metadata_ptr)
+  File "C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\client\session.py", line 1128, in _run
+    str(subfeed_t.get_shape())))
+ValueError: Cannot feed value of shape (200, 11, 1) for Tensor 'Placeholder_3:0', which has shape '(100, 11, 1)'

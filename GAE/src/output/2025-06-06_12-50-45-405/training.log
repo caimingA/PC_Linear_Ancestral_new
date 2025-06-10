@@ -1,0 +1,44 @@
+2025-06-06 12:50:45,405 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 12:50:45,437 INFO - __main__ - Finished generating dataset
+2025-06-06 12:50:45,437 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2025-06-06 12:50:45,878 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2025-06-06 12:50:46,790 INFO - models.gae - Model summary:
+2025-06-06 12:50:46,790 INFO - models.gae - ---------
+2025-06-06 12:50:46,790 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 12:50:46,790 INFO - models.gae - ---------
+2025-06-06 12:50:46,790 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 12:50:46,790 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_2/kernel:0 (float64 16x0) [0, bytes: 0]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_2/bias:0 (float64 0) [0, bytes: 0]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_3/kernel:0 (float64 0x16) [0, bytes: 0]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 12:50:46,790 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 12:50:46,790 INFO - models.gae - Total size of variables: 709
+2025-06-06 12:50:46,790 INFO - models.gae - Total bytes of variables: 5672
+2025-06-06 12:50:46,869 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 12:50:46,869 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 12:50:46,869 CRITICAL - helpers.log_helper - Unhandled exception
+Traceback (most recent call last):
+  File "main.py", line 400, in <module>
+    W_est= main(n=100, p=len(data_array_fmri), data=data_array_fmri_data_temp, W=data_array_fmri)
+  File "main.py", line 246, in main
+    args.max_iter, args.iter_step, output_dir)
+  File "C:\code_old\code\python\PC_Linear_Ancestral_experiment_4\GAE\src\trainers\al_trainer.py", line 52, in train
+    loss_new, mse_new, h_new, W_new = self.train_step(model, iter_step, X, rho, alpha)
+  File "C:\code_old\code\python\PC_Linear_Ancestral_experiment_4\GAE\src\trainers\al_trainer.py", line 94, in train_step
+    model.lr: self.learning_rate})
+  File "C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\client\session.py", line 929, in run
+    run_metadata_ptr)
+  File "C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\client\session.py", line 1128, in _run
+    str(subfeed_t.get_shape())))
+ValueError: Cannot feed value of shape (1, 100, 10) for Tensor 'Placeholder_3:0', which has shape '(100, 10, 1)'

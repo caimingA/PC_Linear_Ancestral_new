@@ -1,0 +1,94 @@
+2025-06-06 13:09:33,905 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:09:33,925 INFO - __main__ - Finished generating dataset
+2025-06-06 13:09:33,925 INFO - __main__ - (100, 10, 1)
+2025-06-06 13:09:33,925 INFO - __main__ - [[-0.         -0.          0.         -1.41830123  1.8346344   0.97295085
+  -0.          0.          1.55397371 -0.        ]
+ [-0.         -0.          0.          0.         -1.47995814  0.
+   0.          0.         -0.5992645  -0.        ]
+ [-1.94392604 -1.0292599   0.          0.          0.         -0.
+  -0.          1.68703438  1.98874939  0.        ]
+ [-0.         -0.         -0.         -0.         -0.          0.
+   0.         -0.          0.          0.        ]
+ [-0.         -0.         -0.          1.02438878  0.         -1.27232051
+   0.         -0.         -0.64399318  0.        ]
+ [ 0.          0.         -0.         -0.         -0.         -0.
+  -0.         -0.          0.          0.        ]
+ [ 0.         -0.          0.         -0.          1.59947574  0.
+   0.         -0.          0.          0.74302732]
+ [-0.         -0.         -0.          0.84141084 -0.          0.52838471
+  -0.          0.          0.          0.        ]
+ [-0.          0.         -0.          0.         -0.         -0.
+   0.          0.         -0.          0.        ]
+ [ 0.         -0.         -0.         -0.72992433  0.         -0.
+   0.         -1.25164534  0.          0.        ]]
+2025-06-06 13:09:33,942 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2025-06-06 13:09:34,346 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2025-06-06 13:09:35,096 INFO - models.gae - Model summary:
+2025-06-06 13:09:35,096 INFO - models.gae - ---------
+2025-06-06 13:09:35,096 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:09:35,097 INFO - models.gae - ---------
+2025-06-06 13:09:35,097 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:09:35,097 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:09:35,098 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:09:35,098 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:09:35,099 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:09:35,099 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:09:35,099 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:09:35,099 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:09:35,099 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:09:35,099 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:09:35,207 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:09:35,209 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:09:35,953 INFO - trainers.al_trainer - [Iter 1] loss 5.731E+00, mse 1.072E+03, acyclic 8.427E-08, shd 20, tpr 0.526, fdr 0.583, pred_size 24
+2025-06-06 13:09:35,961 INFO - trainers.al_trainer - rho 1.000E+00, alpha 8.427E-08
+2025-06-06 13:09:36,401 INFO - trainers.al_trainer - [Iter 2] loss 5.118E+00, mse 9.867E+02, acyclic 2.598E-09, shd 16, tpr 0.737, fdr 0.462, pred_size 26
+2025-06-06 13:09:36,409 INFO - trainers.al_trainer - rho 1.000E+00, alpha 8.687E-08
+2025-06-06 13:09:36,889 INFO - trainers.al_trainer - rho 1.000E+01, alpha 8.687E-08
+2025-06-06 13:09:37,345 INFO - trainers.al_trainer - [Iter 3] loss 4.862E+00, mse 9.485E+02, acyclic 4.441E-10, shd 21, tpr 0.789, fdr 0.531, pred_size 32
+2025-06-06 13:09:37,353 INFO - trainers.al_trainer - rho 1.000E+01, alpha 9.131E-08
+2025-06-06 13:09:37,906 INFO - trainers.al_trainer - rho 1.000E+02, alpha 9.131E-08
+2025-06-06 13:09:38,404 INFO - trainers.al_trainer - rho 1.000E+03, alpha 9.131E-08
+2025-06-06 13:09:38,918 INFO - trainers.al_trainer - rho 1.000E+04, alpha 9.131E-08
+2025-06-06 13:09:39,453 INFO - trainers.al_trainer - rho 1.000E+05, alpha 9.131E-08
+2025-06-06 13:09:39,942 INFO - trainers.al_trainer - rho 1.000E+06, alpha 9.131E-08
+2025-06-06 13:09:40,422 INFO - trainers.al_trainer - rho 1.000E+07, alpha 9.131E-08
+2025-06-06 13:09:40,904 INFO - trainers.al_trainer - rho 1.000E+08, alpha 9.131E-08
+2025-06-06 13:09:41,522 INFO - trainers.al_trainer - rho 1.000E+09, alpha 9.131E-08
+2025-06-06 13:09:42,105 INFO - trainers.al_trainer - rho 1.000E+10, alpha 9.131E-08
+2025-06-06 13:09:42,781 INFO - trainers.al_trainer - rho 1.000E+11, alpha 9.131E-08
+2025-06-06 13:09:43,283 INFO - trainers.al_trainer - rho 1.000E+12, alpha 9.131E-08
+2025-06-06 13:09:43,815 INFO - trainers.al_trainer - rho 1.000E+13, alpha 9.131E-08
+2025-06-06 13:09:44,254 INFO - trainers.al_trainer - rho 1.000E+14, alpha 9.131E-08
+2025-06-06 13:09:44,705 INFO - trainers.al_trainer - rho 1.000E+15, alpha 9.131E-08
+2025-06-06 13:09:45,157 INFO - trainers.al_trainer - rho 1.000E+16, alpha 9.131E-08
+2025-06-06 13:09:45,590 INFO - trainers.al_trainer - rho 1.000E+17, alpha 9.131E-08
+2025-06-06 13:09:46,040 INFO - trainers.al_trainer - [Iter 4] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,041 INFO - trainers.al_trainer - [Iter 5] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,042 INFO - trainers.al_trainer - [Iter 6] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,044 INFO - trainers.al_trainer - [Iter 7] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,044 INFO - trainers.al_trainer - [Iter 8] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,046 INFO - trainers.al_trainer - [Iter 9] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,047 INFO - trainers.al_trainer - [Iter 10] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,048 INFO - trainers.al_trainer - [Iter 11] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,049 INFO - trainers.al_trainer - [Iter 12] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,050 INFO - trainers.al_trainer - [Iter 13] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,051 INFO - trainers.al_trainer - [Iter 14] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,053 INFO - trainers.al_trainer - [Iter 15] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,054 INFO - trainers.al_trainer - [Iter 16] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,055 INFO - trainers.al_trainer - [Iter 17] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,057 INFO - trainers.al_trainer - [Iter 18] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,058 INFO - trainers.al_trainer - [Iter 19] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,059 INFO - trainers.al_trainer - [Iter 20] loss 4.114E+00, mse 7.851E+02, acyclic 6.216E-10, shd 8, tpr 1.000, fdr 0.296, pred_size 27
+2025-06-06 13:09:46,888 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-09-33-904/model/
+2025-06-06 13:09:46,889 INFO - __main__ - Finished training model
+2025-06-06 13:09:53,456 INFO - __main__ - Filter by constant threshold
+2025-06-06 13:09:54,659 INFO - __main__ - Results after thresholding by 0.2: {'fdr': 0.2962962962962963, 'tpr': 1.0, 'fpr': 0.3076923076923077, 'shd': 8, 'pred_size': 27}

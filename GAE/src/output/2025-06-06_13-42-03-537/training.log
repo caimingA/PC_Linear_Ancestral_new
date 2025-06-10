@@ -1,0 +1,1276 @@
+2025-06-06 13:42:03,537 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:42:03,553 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2025-06-06 13:42:03,872 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2025-06-06 13:42:04,579 INFO - models.gae - Model summary:
+2025-06-06 13:42:04,579 INFO - models.gae - ---------
+2025-06-06 13:42:04,579 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:42:04,579 INFO - models.gae - ---------
+2025-06-06 13:42:04,579 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:42:04,579 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:04,579 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:04,579 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:42:04,579 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:42:04,642 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:42:04,642 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:42:05,339 INFO - trainers.al_trainer - [Iter 1] loss 1.856E+01, mse 3.627E+03, acyclic 1.909E-07, shd 30, tpr 0.727, fdr 0.822, pred_size 45
+2025-06-06 13:42:05,339 INFO - trainers.al_trainer - rho 1.000E+00, alpha 1.909E-07
+2025-06-06 13:42:05,748 INFO - trainers.al_trainer - rho 1.000E+01, alpha 1.909E-07
+2025-06-06 13:42:06,157 INFO - trainers.al_trainer - rho 1.000E+02, alpha 1.909E-07
+2025-06-06 13:42:06,552 INFO - trainers.al_trainer - rho 1.000E+03, alpha 1.909E-07
+2025-06-06 13:42:06,962 INFO - trainers.al_trainer - rho 1.000E+04, alpha 1.909E-07
+2025-06-06 13:42:07,370 INFO - trainers.al_trainer - rho 1.000E+05, alpha 1.909E-07
+2025-06-06 13:42:07,765 INFO - trainers.al_trainer - rho 1.000E+06, alpha 1.909E-07
+2025-06-06 13:42:08,173 INFO - trainers.al_trainer - rho 1.000E+07, alpha 1.909E-07
+2025-06-06 13:42:08,583 INFO - trainers.al_trainer - rho 1.000E+08, alpha 1.909E-07
+2025-06-06 13:42:08,993 INFO - trainers.al_trainer - rho 1.000E+09, alpha 1.909E-07
+2025-06-06 13:42:09,403 INFO - trainers.al_trainer - rho 1.000E+10, alpha 1.909E-07
+2025-06-06 13:42:09,813 INFO - trainers.al_trainer - rho 1.000E+11, alpha 1.909E-07
+2025-06-06 13:42:10,239 INFO - trainers.al_trainer - rho 1.000E+12, alpha 1.909E-07
+2025-06-06 13:42:10,727 INFO - trainers.al_trainer - rho 1.000E+13, alpha 1.909E-07
+2025-06-06 13:42:11,215 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.909E-07
+2025-06-06 13:42:11,721 INFO - trainers.al_trainer - [Iter 2] loss 1.708E+01, mse 3.320E+03, acyclic 4.452E-08, shd 32, tpr 0.545, fdr 0.854, pred_size 41
+2025-06-06 13:42:11,721 INFO - trainers.al_trainer - rho 1.000E+14, alpha 4.452E+06
+2025-06-06 13:42:12,195 INFO - trainers.al_trainer - rho 1.000E+15, alpha 4.452E+06
+2025-06-06 13:42:12,653 INFO - trainers.al_trainer - rho 1.000E+16, alpha 4.452E+06
+2025-06-06 13:42:13,141 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:42:14,395 INFO - models.gae - Model summary:
+2025-06-06 13:42:14,395 INFO - models.gae - ---------
+2025-06-06 13:42:14,395 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:42:14,395 INFO - models.gae - ---------
+2025-06-06 13:42:14,395 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:42:14,395 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:14,395 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:14,411 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:14,411 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:42:14,411 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:42:14,475 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:42:14,476 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:42:15,360 INFO - trainers.al_trainer - [Iter 1] loss 8.376E+04, mse 3.350E+07, acyclic 5.288E-04, shd 14, tpr 0.353, fdr 0.538, pred_size 13
+2025-06-06 13:42:15,376 INFO - trainers.al_trainer - rho 1.000E+00, alpha 5.288E-04
+2025-06-06 13:42:15,959 INFO - trainers.al_trainer - rho 1.000E+01, alpha 5.288E-04
+2025-06-06 13:42:16,541 INFO - trainers.al_trainer - [Iter 2] loss 7.230E+04, mse 2.892E+07, acyclic 6.920E-05, shd 14, tpr 0.235, fdr 0.556, pred_size 9
+2025-06-06 13:42:16,549 INFO - trainers.al_trainer - rho 1.000E+01, alpha 1.221E-03
+2025-06-06 13:42:17,128 INFO - trainers.al_trainer - [Iter 3] loss 6.909E+04, mse 2.763E+07, acyclic 1.397E-05, shd 15, tpr 0.176, fdr 0.250, pred_size 4
+2025-06-06 13:42:17,163 INFO - trainers.al_trainer - rho 1.000E+01, alpha 1.360E-03
+2025-06-06 13:42:17,774 INFO - trainers.al_trainer - rho 1.000E+02, alpha 1.360E-03
+2025-06-06 13:42:18,357 INFO - trainers.al_trainer - rho 1.000E+03, alpha 1.360E-03
+2025-06-06 13:42:18,939 INFO - trainers.al_trainer - rho 1.000E+04, alpha 1.360E-03
+2025-06-06 13:42:19,648 INFO - trainers.al_trainer - rho 1.000E+05, alpha 1.360E-03
+2025-06-06 13:42:20,374 INFO - trainers.al_trainer - rho 1.000E+06, alpha 1.360E-03
+2025-06-06 13:42:21,052 INFO - trainers.al_trainer - rho 1.000E+07, alpha 1.360E-03
+2025-06-06 13:42:21,697 INFO - trainers.al_trainer - rho 1.000E+08, alpha 1.360E-03
+2025-06-06 13:42:22,439 INFO - trainers.al_trainer - rho 1.000E+09, alpha 1.360E-03
+2025-06-06 13:42:23,118 INFO - trainers.al_trainer - rho 1.000E+10, alpha 1.360E-03
+2025-06-06 13:42:23,780 INFO - trainers.al_trainer - rho 1.000E+11, alpha 1.360E-03
+2025-06-06 13:42:24,427 INFO - trainers.al_trainer - rho 1.000E+12, alpha 1.360E-03
+2025-06-06 13:42:25,058 INFO - trainers.al_trainer - rho 1.000E+13, alpha 1.360E-03
+2025-06-06 13:42:25,705 INFO - trainers.al_trainer - [Iter 4] loss 6.171E+04, mse 2.468E+07, acyclic 1.843E-06, shd 15, tpr 0.118, fdr 0.000, pred_size 2
+2025-06-06 13:42:25,721 INFO - trainers.al_trainer - rho 1.000E+13, alpha 1.843E+07
+2025-06-06 13:42:26,415 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.843E+07
+2025-06-06 13:42:27,095 INFO - trainers.al_trainer - [Iter 5] loss 6.160E+04, mse 2.464E+07, acyclic 2.401E-07, shd 15, tpr 0.118, fdr 0.000, pred_size 2
+2025-06-06 13:42:27,111 INFO - trainers.al_trainer - rho 1.000E+14, alpha 4.244E+07
+2025-06-06 13:42:27,788 INFO - trainers.al_trainer - rho 1.000E+15, alpha 4.244E+07
+2025-06-06 13:42:28,450 INFO - trainers.al_trainer - [Iter 6] loss 6.202E+04, mse 2.481E+07, acyclic 5.357E-08, shd 15, tpr 0.118, fdr 0.000, pred_size 2
+2025-06-06 13:42:28,450 INFO - trainers.al_trainer - rho 1.000E+15, alpha 9.601E+07
+2025-06-06 13:42:29,398 INFO - trainers.al_trainer - rho 1.000E+16, alpha 9.601E+07
+2025-06-06 13:42:30,637 INFO - trainers.al_trainer - rho 1.000E+17, alpha 9.601E+07
+2025-06-06 13:42:31,635 INFO - trainers.al_trainer - [Iter 7] loss 6.200E+04, mse 2.480E+07, acyclic 8.660E-09, shd 15, tpr 0.118, fdr 0.000, pred_size 2
+2025-06-06 13:42:31,645 INFO - trainers.al_trainer - rho 1.000E+17, alpha 9.620E+08
+2025-06-06 13:42:32,504 INFO - trainers.al_trainer - [Iter 8] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,504 INFO - trainers.al_trainer - [Iter 9] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,504 INFO - trainers.al_trainer - [Iter 10] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 11] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 12] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 13] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 14] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 15] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 16] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 17] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 18] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 19] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:32,520 INFO - trainers.al_trainer - [Iter 20] loss 6.202E+04, mse 2.481E+07, acyclic 5.185E-09, shd 15, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:33,365 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-42-13-141/model/
+2025-06-06 13:42:33,365 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:42:34,444 INFO - models.gae - Model summary:
+2025-06-06 13:42:34,444 INFO - models.gae - ---------
+2025-06-06 13:42:34,444 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:42:34,444 INFO - models.gae - ---------
+2025-06-06 13:42:34,444 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:42:34,444 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:34,444 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:34,444 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:42:34,444 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:42:34,508 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:42:34,508 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:42:35,235 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:42:35,235 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:42:35,707 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:35,707 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:42:36,164 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:42:36,606 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:42:37,078 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:42:37,565 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:42:38,069 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:42:38,069 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:42:38,668 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:42:39,173 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:42:39,662 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:42:40,198 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:42:40,655 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:42:41,207 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:42:41,679 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:42:42,151 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:42:42,672 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:42:43,209 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:42:43,699 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:42:44,190 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:42:44,679 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:42:45,200 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,216 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:45,232 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:42:46,125 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-42-33-365/model/
+2025-06-06 13:42:46,141 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:42:47,309 INFO - models.gae - Model summary:
+2025-06-06 13:42:47,309 INFO - models.gae - ---------
+2025-06-06 13:42:47,309 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:42:47,309 INFO - models.gae - ---------
+2025-06-06 13:42:47,309 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:42:47,309 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:42:47,309 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:42:47,325 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:42:47,325 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:42:47,325 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:42:47,436 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:42:47,436 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:42:48,337 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:42:48,353 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:42:48,950 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:42:49,548 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:42:50,129 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:42:50,742 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:42:51,340 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:42:51,953 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:42:52,550 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:42:53,147 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:42:53,776 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:42:54,389 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:42:55,002 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:42:55,599 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:42:55,615 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:42:56,212 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:42:56,810 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:42:57,439 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:42:57,471 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:42:58,196 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:42:58,906 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:42:58,922 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:42:59,616 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:43:00,310 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:43:00,326 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:43:01,052 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:43:01,955 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:01,955 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:43:02,880 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:43:03,770 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,770 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,770 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,770 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,785 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:03,801 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:04,623 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-42-46-141/model/
+2025-06-06 13:43:04,623 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:43:05,656 INFO - models.gae - Model summary:
+2025-06-06 13:43:05,656 INFO - models.gae - ---------
+2025-06-06 13:43:05,656 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:43:05,656 INFO - models.gae - ---------
+2025-06-06 13:43:05,656 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:43:05,656 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:05,656 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:05,656 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:43:05,656 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:43:05,719 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:43:05,719 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:43:06,445 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:43:06,461 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:43:06,933 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:06,933 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:43:07,437 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:43:07,972 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:43:08,523 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:43:09,011 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:43:09,515 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:43:09,531 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:43:10,129 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:43:10,680 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:43:11,199 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:43:11,908 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:43:12,522 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:43:13,089 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:43:13,735 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:43:14,238 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:43:14,742 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:43:15,262 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:43:15,750 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:43:16,222 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:43:16,741 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:43:17,297 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,297 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,313 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:17,329 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:18,246 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-43-04-623/model/
+2025-06-06 13:43:18,262 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:43:19,481 INFO - models.gae - Model summary:
+2025-06-06 13:43:19,481 INFO - models.gae - ---------
+2025-06-06 13:43:19,498 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:43:19,498 INFO - models.gae - ---------
+2025-06-06 13:43:19,498 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:43:19,498 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:19,498 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:19,498 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:43:19,498 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:43:19,562 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:43:19,579 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:43:20,476 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:43:20,492 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:43:21,106 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:43:21,720 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:43:22,334 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:43:22,963 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:43:23,578 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:43:24,192 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:43:24,805 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:43:25,421 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:43:26,035 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:43:26,649 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:43:27,279 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:43:27,892 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:43:27,892 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:43:28,603 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:43:29,282 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:43:29,976 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:43:29,976 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:43:30,735 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:43:31,446 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:43:31,455 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:43:32,162 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:43:32,839 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:43:32,839 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:43:33,801 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:43:34,750 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:34,750 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:43:35,889 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:43:36,838 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,838 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,852 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,868 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,868 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,868 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,868 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:36,868 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:43:37,679 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-43-18-262/model/
+2025-06-06 13:43:37,695 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:43:38,740 INFO - models.gae - Model summary:
+2025-06-06 13:43:38,740 INFO - models.gae - ---------
+2025-06-06 13:43:38,740 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:43:38,740 INFO - models.gae - ---------
+2025-06-06 13:43:38,740 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:43:38,740 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:38,740 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:38,740 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:38,740 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:38,740 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:38,749 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:38,749 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:43:38,754 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:43:38,814 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:43:38,818 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:43:39,574 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:43:39,574 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:43:40,030 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:40,030 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:43:40,471 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:43:40,926 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:43:41,366 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:43:41,823 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:43:42,262 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:43:42,282 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:43:42,735 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:43:43,176 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:43:43,617 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:43:44,073 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:43:44,513 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:43:44,969 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:43:45,410 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:43:45,882 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:43:46,371 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:43:46,891 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:43:47,441 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:43:47,951 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:43:48,456 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:43:48,945 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,961 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,961 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,961 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,961 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,961 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,977 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:48,993 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:43:49,910 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-43-37-695/model/
+2025-06-06 13:43:49,910 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:43:51,045 INFO - models.gae - Model summary:
+2025-06-06 13:43:51,045 INFO - models.gae - ---------
+2025-06-06 13:43:51,045 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:43:51,045 INFO - models.gae - ---------
+2025-06-06 13:43:51,045 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:43:51,045 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:43:51,045 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:43:51,045 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:43:51,061 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:43:51,109 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:43:51,109 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:43:52,393 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:43:52,400 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:43:53,375 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:43:54,270 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:43:55,320 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:43:56,240 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:43:57,424 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:43:58,579 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:43:59,773 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:44:01,090 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:44:02,402 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:44:03,497 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:44:05,146 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:44:06,327 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:44:06,343 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:44:07,506 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:44:08,519 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:44:09,748 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:44:09,758 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:44:11,383 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:44:13,988 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:44:14,004 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:44:16,332 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:44:18,572 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:44:18,580 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:44:20,051 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:44:22,151 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:22,167 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:44:23,461 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:44:24,742 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,742 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,760 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,760 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,760 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,772 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,774 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,777 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,777 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,777 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,777 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,777 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,794 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:24,794 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:44:26,106 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-43-49-910/model/
+2025-06-06 13:44:26,124 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:44:27,654 INFO - models.gae - Model summary:
+2025-06-06 13:44:27,655 INFO - models.gae - ---------
+2025-06-06 13:44:27,656 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:44:27,657 INFO - models.gae - ---------
+2025-06-06 13:44:27,658 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:44:27,659 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:44:27,660 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:27,661 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:44:27,662 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:27,663 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:44:27,664 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:44:27,664 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:44:27,665 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:27,666 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:44:27,668 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:27,668 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:44:27,669 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:44:27,670 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:44:27,670 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:44:27,735 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:44:27,737 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:44:28,475 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:44:28,482 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:44:28,930 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:28,930 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:44:29,512 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:44:30,325 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:44:31,672 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:44:32,421 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:44:33,218 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:44:33,236 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:44:34,200 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:44:34,932 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:44:35,642 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:44:36,246 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:44:37,357 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:44:38,127 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:44:38,772 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:44:39,415 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:44:40,008 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:44:40,780 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:44:41,771 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:44:42,708 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:44:43,557 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:44:44,885 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,885 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,902 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,922 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,930 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,935 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,937 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,937 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,959 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,964 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,970 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,979 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,986 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:44,986 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:45,002 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:45,002 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:45,018 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:44:46,116 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-44-26-123/model/
+2025-06-06 13:44:46,129 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:44:47,240 INFO - models.gae - Model summary:
+2025-06-06 13:44:47,240 INFO - models.gae - ---------
+2025-06-06 13:44:47,240 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:44:47,256 INFO - models.gae - ---------
+2025-06-06 13:44:47,256 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:44:47,256 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:44:47,256 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:44:47,256 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:44:47,256 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:44:47,335 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:44:47,338 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:44:48,580 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:44:48,596 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:44:49,642 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:44:51,622 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:44:52,931 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:44:54,765 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:44:57,151 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:44:59,513 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:45:01,337 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:45:03,502 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:45:04,325 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:45:05,131 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:45:05,955 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:45:06,809 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:45:06,825 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:45:07,663 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:45:08,558 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:45:09,518 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:45:09,525 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:45:10,500 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:45:11,402 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:45:11,403 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:45:12,428 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:45:13,304 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:45:13,304 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:45:14,550 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:45:15,895 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:15,904 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:45:17,290 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:45:18,758 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,773 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,789 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,796 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,805 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,814 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,814 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,821 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,832 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,837 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,837 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,837 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,854 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:18,854 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:45:20,758 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-44-46-129/model/
+2025-06-06 13:45:20,773 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:45:23,316 INFO - models.gae - Model summary:
+2025-06-06 13:45:23,318 INFO - models.gae - ---------
+2025-06-06 13:45:23,320 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:45:23,321 INFO - models.gae - ---------
+2025-06-06 13:45:23,322 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:45:23,324 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:45:23,326 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:23,328 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:45:23,330 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:23,331 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:45:23,333 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:45:23,335 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:45:23,337 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:23,339 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:45:23,341 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:23,343 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:45:23,344 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:45:23,347 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:45:23,350 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:45:23,487 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:45:23,490 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:45:25,283 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:45:25,294 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:45:26,558 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:26,569 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:45:27,459 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:45:28,248 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:45:29,383 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:45:30,624 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:45:31,686 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:45:31,690 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:45:32,823 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:45:33,795 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:45:34,660 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:45:35,634 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:45:36,458 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:45:37,307 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:45:38,304 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:45:39,295 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:45:40,345 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:45:41,396 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:45:42,364 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:45:43,461 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:45:44,713 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:45:45,561 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,566 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,579 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,584 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,586 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,593 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,595 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,602 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,606 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,609 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,617 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,618 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,625 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,632 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,633 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,641 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:45,641 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:45:47,334 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-45-20-772/model/
+2025-06-06 13:45:47,350 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:45:49,603 INFO - models.gae - Model summary:
+2025-06-06 13:45:49,606 INFO - models.gae - ---------
+2025-06-06 13:45:49,608 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:45:49,615 INFO - models.gae - ---------
+2025-06-06 13:45:49,617 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:45:49,619 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:45:49,621 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:49,623 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:45:49,625 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:49,629 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:45:49,630 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:45:49,632 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:45:49,634 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:49,636 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:45:49,639 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:45:49,641 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:45:49,644 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:45:49,647 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:45:49,649 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:45:49,783 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:45:49,788 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:45:52,687 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:45:52,703 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:45:55,376 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:45:57,824 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:45:59,545 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:46:01,634 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:46:03,210 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:46:05,805 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:46:08,573 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:46:10,221 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:46:11,828 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:46:13,768 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:46:16,421 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:46:18,480 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:46:18,494 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:46:20,123 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:46:22,522 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:46:25,291 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:46:25,291 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:46:27,398 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:46:29,166 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:46:29,166 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:46:30,834 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:46:33,210 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:46:33,222 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:46:35,193 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:46:37,242 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:37,247 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:46:39,002 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:46:40,655 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,665 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,677 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,681 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,685 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,693 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,698 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,706 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,710 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,719 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,723 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,732 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,736 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:40,745 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:46:42,324 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-45-47-334/model/
+2025-06-06 13:46:42,345 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:46:44,757 INFO - models.gae - Model summary:
+2025-06-06 13:46:44,761 INFO - models.gae - ---------
+2025-06-06 13:46:44,766 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:46:44,766 INFO - models.gae - ---------
+2025-06-06 13:46:44,770 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:46:44,770 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:46:44,770 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:46:44,774 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:46:44,774 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:46:44,778 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:46:44,778 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:46:44,782 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:46:44,782 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:46:44,786 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:46:44,786 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:46:44,791 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:46:44,795 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:46:44,795 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:46:44,799 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:46:44,927 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:46:44,943 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:46:46,572 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:46:46,583 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:46:47,502 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:46:47,515 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:46:48,306 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:46:49,135 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:46:49,959 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:46:50,794 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:46:51,649 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:46:51,662 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:46:52,497 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:46:53,535 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:46:54,858 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:46:55,995 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:46:56,995 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:46:58,121 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:46:59,063 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:46:59,976 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:47:01,088 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:47:02,292 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:47:03,272 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:47:04,348 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:47:05,511 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:47:06,612 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,628 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,634 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,638 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,646 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,653 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,659 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,667 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,680 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,688 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,692 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,706 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,710 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,719 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,735 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,740 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:06,744 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:47:08,665 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-46-42-343/model/
+2025-06-06 13:47:08,690 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:47:11,130 INFO - models.gae - Model summary:
+2025-06-06 13:47:11,134 INFO - models.gae - ---------
+2025-06-06 13:47:11,138 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:47:11,142 INFO - models.gae - ---------
+2025-06-06 13:47:11,146 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:47:11,146 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:47:11,150 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:47:11,155 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:47:11,155 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:47:11,159 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:47:11,159 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:47:11,163 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:47:11,163 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:47:11,167 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:47:11,167 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:47:11,171 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:47:11,171 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:47:11,175 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:47:11,175 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:47:11,322 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:47:11,322 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:47:14,427 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:47:14,457 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:47:16,414 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:47:18,052 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:47:20,020 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:47:21,995 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:47:24,251 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:47:27,133 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:47:29,963 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:47:31,886 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:47:33,837 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:47:35,766 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:47:37,575 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:47:40,184 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:47:40,201 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:47:42,805 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:47:45,068 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:47:46,491 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:47:46,500 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:47:47,758 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:47:49,666 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:47:49,674 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:47:51,218 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:47:52,520 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:47:52,529 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:47:53,901 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:47:55,287 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:55,300 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:47:56,969 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:47:59,055 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,062 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,068 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,078 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,085 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,093 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,101 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,109 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,113 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,122 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,128 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,138 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,140 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:47:59,149 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:48:00,916 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-47-08-686/model/
+2025-06-06 13:48:00,937 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:48:03,353 INFO - models.gae - Model summary:
+2025-06-06 13:48:03,358 INFO - models.gae - ---------
+2025-06-06 13:48:03,362 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:48:03,366 INFO - models.gae - ---------
+2025-06-06 13:48:03,366 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:48:03,367 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:48:03,367 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:03,370 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:48:03,370 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:03,370 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:48:03,370 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:48:03,374 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:48:03,374 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:03,379 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:48:03,387 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:03,392 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:48:03,398 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:48:03,402 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:48:03,411 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:48:03,554 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:48:03,558 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:48:05,190 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:48:05,203 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:48:06,100 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:06,112 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:48:06,928 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:48:07,705 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:48:08,523 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:48:09,322 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:48:10,114 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:48:10,127 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:48:10,938 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:48:11,945 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:48:13,079 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:48:14,211 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:48:15,231 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:48:16,497 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:48:17,826 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:48:18,912 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:48:19,812 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:48:20,928 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:48:21,869 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:48:22,871 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:48:24,043 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:48:25,201 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,229 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,236 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,243 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,252 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,252 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,252 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,270 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,270 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,285 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,285 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,292 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,301 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,311 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,311 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,319 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:25,319 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:48:27,102 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-48-00-937/model/
+2025-06-06 13:48:27,128 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:48:29,723 INFO - models.gae - Model summary:
+2025-06-06 13:48:29,728 INFO - models.gae - ---------
+2025-06-06 13:48:29,728 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:48:29,731 INFO - models.gae - ---------
+2025-06-06 13:48:29,731 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:48:29,735 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:48:29,735 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:29,739 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:48:29,739 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:29,743 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:48:29,743 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:48:29,747 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:48:29,752 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:29,756 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:48:29,760 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:48:29,764 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:48:29,764 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:48:29,768 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:48:29,773 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:48:29,885 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:48:29,885 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:48:32,504 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:48:32,507 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:48:34,381 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:48:36,180 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:48:38,644 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:48:41,084 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:48:43,456 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:48:45,700 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:48:47,604 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:48:49,542 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:48:51,287 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:48:53,557 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:48:55,774 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:48:57,692 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:48:57,698 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:48:59,254 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:49:00,778 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:49:02,591 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:49:02,605 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:49:04,859 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:49:06,138 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:49:06,149 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:49:07,780 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:49:10,092 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:49:10,105 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:49:11,672 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:49:13,834 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:13,851 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:49:16,283 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:49:18,944 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,957 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,965 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,970 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,977 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,986 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:18,994 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,002 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,015 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,023 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,032 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,053 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,059 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:19,068 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:49:20,749 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-48-27-128/model/
+2025-06-06 13:49:20,772 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:49:23,086 INFO - models.gae - Model summary:
+2025-06-06 13:49:23,102 INFO - models.gae - ---------
+2025-06-06 13:49:23,102 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:49:23,102 INFO - models.gae - ---------
+2025-06-06 13:49:23,117 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:49:23,117 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:49:23,133 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:23,133 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:49:23,133 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:49:23,149 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:49:23,149 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:49:23,149 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:49:23,276 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:49:23,276 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:49:24,841 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:49:24,844 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:49:25,637 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:25,647 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:49:26,418 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:49:27,305 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:49:28,351 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:49:29,424 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:49:30,256 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:49:30,274 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:49:31,309 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:49:32,263 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:49:33,339 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:49:34,491 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:49:35,294 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:49:36,109 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:49:36,940 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:49:37,767 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:49:38,606 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:49:39,410 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:49:40,344 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:49:41,293 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:49:42,275 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:49:43,012 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,020 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,029 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,034 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,042 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,045 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,053 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,057 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,066 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,070 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,074 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,083 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,087 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,094 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,098 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,102 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:43,110 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:49:44,763 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-49-20-768/model/
+2025-06-06 13:49:44,780 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:49:47,041 INFO - models.gae - Model summary:
+2025-06-06 13:49:47,045 INFO - models.gae - ---------
+2025-06-06 13:49:47,049 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:49:47,054 INFO - models.gae - ---------
+2025-06-06 13:49:47,058 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:49:47,062 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:49:47,066 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:47,070 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:49:47,074 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:47,078 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:49:47,082 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:49:47,087 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:49:47,091 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:47,098 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:49:47,099 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:49:47,103 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:49:47,107 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:49:47,107 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:49:47,114 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:49:47,249 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:49:47,256 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:49:49,583 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:49:49,596 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:49:51,279 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:49:53,802 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:49:55,735 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:49:57,659 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:49:59,392 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:50:01,260 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:50:03,087 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:50:05,461 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:50:07,280 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:50:09,018 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:50:10,532 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:50:12,137 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:50:12,142 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:50:13,791 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:50:15,802 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:50:17,523 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:50:17,535 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:50:19,582 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:50:21,502 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:50:21,514 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:50:23,265 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:50:25,006 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:50:25,016 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:50:26,620 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:50:29,179 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:29,191 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:50:31,340 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:50:32,924 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,929 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,933 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,937 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,942 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,946 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,950 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,959 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,963 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,967 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,971 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,975 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,979 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:32,988 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:50:34,903 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-49-44-780/model/
+2025-06-06 13:50:34,925 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:50:37,360 INFO - models.gae - Model summary:
+2025-06-06 13:50:37,364 INFO - models.gae - ---------
+2025-06-06 13:50:37,368 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:50:37,375 INFO - models.gae - ---------
+2025-06-06 13:50:37,376 INFO - models.gae - Variable:0 (float64_ref 10x10) [100, bytes: 800]
+2025-06-06 13:50:37,380 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:50:37,384 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:50:37,388 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:50:37,391 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:50:37,392 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:50:37,395 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:50:37,399 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:50:37,403 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:50:37,407 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:50:37,410 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:50:37,413 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:50:37,413 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:50:37,417 INFO - models.gae - Total size of variables: 742
+2025-06-06 13:50:37,421 INFO - models.gae - Total bytes of variables: 5936
+2025-06-06 13:50:37,545 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:50:37,552 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:50:39,202 INFO - trainers.al_trainer - [Iter 1] loss 1.917E+01, mse 3.739E+03, acyclic 2.297E-07, shd 24, tpr 1.000, fdr 0.725, pred_size 40
+2025-06-06 13:50:39,221 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.297E-07
+2025-06-06 13:50:40,275 INFO - trainers.al_trainer - [Iter 2] loss 1.877E+01, mse 3.701E+03, acyclic 1.622E-08, shd 23, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:40,288 INFO - trainers.al_trainer - rho 1.000E+00, alpha 2.459E-07
+2025-06-06 13:50:41,276 INFO - trainers.al_trainer - rho 1.000E+01, alpha 2.459E-07
+2025-06-06 13:50:42,401 INFO - trainers.al_trainer - rho 1.000E+02, alpha 2.459E-07
+2025-06-06 13:50:43,231 INFO - trainers.al_trainer - rho 1.000E+03, alpha 2.459E-07
+2025-06-06 13:50:44,069 INFO - trainers.al_trainer - rho 1.000E+04, alpha 2.459E-07
+2025-06-06 13:50:44,890 INFO - trainers.al_trainer - [Iter 3] loss 1.844E+01, mse 3.653E+03, acyclic 3.488E-09, shd 22, tpr 0.909, fdr 0.697, pred_size 33
+2025-06-06 13:50:44,897 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.513E-05
+2025-06-06 13:50:45,707 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.513E-05
+2025-06-06 13:50:46,582 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.513E-05
+2025-06-06 13:50:47,446 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.513E-05
+2025-06-06 13:50:48,341 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.513E-05
+2025-06-06 13:50:49,196 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.513E-05
+2025-06-06 13:50:49,981 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.513E-05
+2025-06-06 13:50:50,730 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.513E-05
+2025-06-06 13:50:51,760 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.513E-05
+2025-06-06 13:50:52,990 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.513E-05
+2025-06-06 13:50:54,084 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.513E-05
+2025-06-06 13:50:54,980 INFO - trainers.al_trainer - rho 1.000E+15, alpha 3.513E-05
+2025-06-06 13:50:56,029 INFO - trainers.al_trainer - rho 1.000E+16, alpha 3.513E-05
+2025-06-06 13:50:57,041 INFO - trainers.al_trainer - rho 1.000E+17, alpha 3.513E-05
+2025-06-06 13:50:58,143 INFO - trainers.al_trainer - [Iter 4] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,155 INFO - trainers.al_trainer - [Iter 5] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,164 INFO - trainers.al_trainer - [Iter 6] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,173 INFO - trainers.al_trainer - [Iter 7] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,181 INFO - trainers.al_trainer - [Iter 8] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,190 INFO - trainers.al_trainer - [Iter 9] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,198 INFO - trainers.al_trainer - [Iter 10] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,207 INFO - trainers.al_trainer - [Iter 11] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,214 INFO - trainers.al_trainer - [Iter 12] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,223 INFO - trainers.al_trainer - [Iter 13] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,231 INFO - trainers.al_trainer - [Iter 14] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,240 INFO - trainers.al_trainer - [Iter 15] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,261 INFO - trainers.al_trainer - [Iter 16] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,273 INFO - trainers.al_trainer - [Iter 17] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,278 INFO - trainers.al_trainer - [Iter 18] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,282 INFO - trainers.al_trainer - [Iter 19] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:50:58,290 INFO - trainers.al_trainer - [Iter 20] loss 1.832E+01, mse 3.605E+03, acyclic 1.634E-09, shd 26, tpr 1.000, fdr 0.718, pred_size 39
+2025-06-06 13:51:00,095 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-50-34-924/model/
+2025-06-06 13:51:00,116 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:51:02,445 INFO - models.gae - Model summary:
+2025-06-06 13:51:02,449 INFO - models.gae - ---------
+2025-06-06 13:51:02,453 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:51:02,458 INFO - models.gae - ---------
+2025-06-06 13:51:02,458 INFO - models.gae - Variable:0 (float64_ref 11x11) [121, bytes: 968]
+2025-06-06 13:51:02,462 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:51:02,462 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:51:02,466 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:51:02,466 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:51:02,472 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:51:02,477 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:51:02,479 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:51:02,482 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:51:02,484 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:51:02,486 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:51:02,489 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:51:02,491 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:51:02,492 INFO - models.gae - Total size of variables: 763
+2025-06-06 13:51:02,492 INFO - models.gae - Total bytes of variables: 6104
+2025-06-06 13:51:02,608 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:51:02,614 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:51:05,249 INFO - trainers.al_trainer - [Iter 1] loss 7.462E+04, mse 2.985E+07, acyclic 3.271E-04, shd 15, tpr 0.353, fdr 0.600, pred_size 15
+2025-06-06 13:51:05,261 INFO - trainers.al_trainer - rho 1.000E+00, alpha 3.271E-04
+2025-06-06 13:51:07,431 INFO - trainers.al_trainer - rho 1.000E+01, alpha 3.271E-04
+2025-06-06 13:51:09,808 INFO - trainers.al_trainer - rho 1.000E+02, alpha 3.271E-04
+2025-06-06 13:51:12,339 INFO - trainers.al_trainer - rho 1.000E+03, alpha 3.271E-04
+2025-06-06 13:51:14,109 INFO - trainers.al_trainer - rho 1.000E+04, alpha 3.271E-04
+2025-06-06 13:51:15,519 INFO - trainers.al_trainer - rho 1.000E+05, alpha 3.271E-04
+2025-06-06 13:51:16,885 INFO - trainers.al_trainer - rho 1.000E+06, alpha 3.271E-04
+2025-06-06 13:51:18,811 INFO - trainers.al_trainer - rho 1.000E+07, alpha 3.271E-04
+2025-06-06 13:51:20,500 INFO - trainers.al_trainer - rho 1.000E+08, alpha 3.271E-04
+2025-06-06 13:51:22,422 INFO - trainers.al_trainer - rho 1.000E+09, alpha 3.271E-04
+2025-06-06 13:51:24,096 INFO - trainers.al_trainer - rho 1.000E+10, alpha 3.271E-04
+2025-06-06 13:51:26,584 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.271E-04
+2025-06-06 13:51:29,211 INFO - trainers.al_trainer - [Iter 2] loss 5.822E+04, mse 2.326E+07, acyclic 3.460E-05, shd 16, tpr 0.118, fdr 0.333, pred_size 3
+2025-06-06 13:51:29,223 INFO - trainers.al_trainer - rho 1.000E+11, alpha 3.460E+06
+2025-06-06 13:51:30,973 INFO - trainers.al_trainer - rho 1.000E+12, alpha 3.460E+06
+2025-06-06 13:51:32,973 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.460E+06
+2025-06-06 13:51:34,785 INFO - trainers.al_trainer - [Iter 3] loss 5.836E+04, mse 2.332E+07, acyclic 3.135E-06, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:51:34,793 INFO - trainers.al_trainer - rho 1.000E+13, alpha 3.481E+07
+2025-06-06 13:51:37,057 INFO - trainers.al_trainer - rho 1.000E+14, alpha 3.481E+07
+2025-06-06 13:51:38,875 INFO - trainers.al_trainer - [Iter 4] loss 5.839E+04, mse 2.334E+07, acyclic 7.019E-07, shd 16, tpr 0.118, fdr 0.500, pred_size 4
+2025-06-06 13:51:38,892 INFO - trainers.al_trainer - rho 1.000E+14, alpha 1.050E+08
+2025-06-06 13:51:41,351 INFO - trainers.al_trainer - rho 1.000E+15, alpha 1.050E+08
+2025-06-06 13:51:43,436 INFO - trainers.al_trainer - [Iter 5] loss 5.837E+04, mse 2.333E+07, acyclic 1.638E-07, shd 16, tpr 0.118, fdr 0.600, pred_size 5
+2025-06-06 13:51:43,449 INFO - trainers.al_trainer - rho 1.000E+15, alpha 2.688E+08
+2025-06-06 13:51:45,177 INFO - trainers.al_trainer - rho 1.000E+16, alpha 2.688E+08
+2025-06-06 13:51:46,661 INFO - trainers.al_trainer - [Iter 6] loss 5.826E+04, mse 2.330E+07, acyclic 2.905E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:46,665 INFO - trainers.al_trainer - rho 1.000E+16, alpha 5.594E+08
+2025-06-06 13:51:48,081 INFO - trainers.al_trainer - rho 1.000E+17, alpha 5.594E+08
+2025-06-06 13:51:50,367 INFO - trainers.al_trainer - [Iter 7] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,376 INFO - trainers.al_trainer - [Iter 8] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,388 INFO - trainers.al_trainer - [Iter 9] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,401 INFO - trainers.al_trainer - [Iter 10] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,410 INFO - trainers.al_trainer - [Iter 11] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,418 INFO - trainers.al_trainer - [Iter 12] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,426 INFO - trainers.al_trainer - [Iter 13] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,434 INFO - trainers.al_trainer - [Iter 14] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,438 INFO - trainers.al_trainer - [Iter 15] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,445 INFO - trainers.al_trainer - [Iter 16] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,453 INFO - trainers.al_trainer - [Iter 17] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,471 INFO - trainers.al_trainer - [Iter 18] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,483 INFO - trainers.al_trainer - [Iter 19] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:50,491 INFO - trainers.al_trainer - [Iter 20] loss 5.811E+04, mse 2.324E+07, acyclic 1.063E-08, shd 16, tpr 0.118, fdr 0.667, pred_size 6
+2025-06-06 13:51:51,805 INFO - trainers.al_trainer - Model saved to output/2025-06-06_13-51-00-112/model/

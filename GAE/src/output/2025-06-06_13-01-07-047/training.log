@@ -1,0 +1,39 @@
+2025-06-06 13:01:07,048 INFO - helpers.log_helper - Finished configuring logger.
+2025-06-06 13:01:07,082 INFO - __main__ - Finished generating dataset
+2025-06-06 13:01:07,092 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2025-06-06 13:01:07,565 WARNING - tensorflow - From C:\Program_Files\anaconda3\envs\py37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2025-06-06 13:01:08,528 INFO - models.gae - Model summary:
+2025-06-06 13:01:08,529 INFO - models.gae - ---------
+2025-06-06 13:01:08,529 INFO - models.gae - Variables: name (type shape) [size]
+2025-06-06 13:01:08,529 INFO - models.gae - ---------
+2025-06-06 13:01:08,529 INFO - models.gae - Variable:0 (float64_ref 20x20) [400, bytes: 3200]
+2025-06-06 13:01:08,530 INFO - models.gae - dense/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:01:08,530 INFO - models.gae - dense/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_1/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_1/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_2/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_2/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_3/kernel:0 (float64 1x16) [16, bytes: 128]
+2025-06-06 13:01:08,530 INFO - models.gae - dense_3/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:01:08,531 INFO - models.gae - dense_4/kernel:0 (float64 16x16) [256, bytes: 2048]
+2025-06-06 13:01:08,531 INFO - models.gae - dense_4/bias:0 (float64 16) [16, bytes: 128]
+2025-06-06 13:01:08,531 INFO - models.gae - dense_5/kernel:0 (float64 16x1) [16, bytes: 128]
+2025-06-06 13:01:08,531 INFO - models.gae - dense_5/bias:0 (float64 1) [1, bytes: 8]
+2025-06-06 13:01:08,532 INFO - models.gae - Total size of variables: 1042
+2025-06-06 13:01:08,532 INFO - models.gae - Total bytes of variables: 8336
+2025-06-06 13:01:08,625 INFO - trainers.al_trainer - Started training for 20 iterations
+2025-06-06 13:01:08,626 INFO - trainers.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-06-06 13:01:20,364 INFO - trainers.al_trainer - [Iter 1] loss 1.120E+01, mse 6.457E+04, acyclic 4.315E-08, shd 17, tpr 0.889, fdr 0.368, pred_size 38
+2025-06-06 13:01:20,366 INFO - trainers.al_trainer - rho 1.000E+00, alpha 4.315E-08
+2025-06-06 13:01:33,088 INFO - trainers.al_trainer - [Iter 2] loss 1.026E+01, mse 5.993E+04, acyclic 4.707E-09, shd 15, tpr 0.963, fdr 0.350, pred_size 40
+2025-06-06 13:01:33,096 INFO - trainers.al_trainer - rho 1.000E+00, alpha 4.785E-08
+2025-06-06 13:01:46,328 INFO - trainers.al_trainer - rho 1.000E+01, alpha 4.785E-08
+2025-06-06 13:01:59,530 INFO - trainers.al_trainer - [Iter 3] loss 9.757E+00, mse 5.740E+04, acyclic 9.532E-10, shd 7, tpr 1.000, fdr 0.206, pred_size 34
+2025-06-06 13:01:59,537 INFO - trainers.al_trainer - rho 1.000E+01, alpha 5.738E-08
+2025-06-06 13:02:12,902 INFO - trainers.al_trainer - rho 1.000E+02, alpha 5.738E-08
+2025-06-06 13:02:25,931 INFO - trainers.al_trainer - rho 1.000E+03, alpha 5.738E-08
+2025-06-06 13:02:39,377 INFO - trainers.al_trainer - rho 1.000E+04, alpha 5.738E-08
