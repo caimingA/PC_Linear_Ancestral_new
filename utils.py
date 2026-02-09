@@ -130,7 +130,7 @@ def get_residual(xi, xj):
 
 def is_independent(X, Y, alpha):
     _, p = hsic_test_gamma(X, Y, bw_method="mdbs")
-    print(p)
+    # print(p)
     return p > alpha
 
 
@@ -473,7 +473,7 @@ def detect_expections(CPDAG, collider_old):
     DAG_temp = np.where(CPDAG == 1.0, 1.0, 0)
     loop_flag = PL.topological_sort(DAG_temp)
     if loop_flag == 0:
-        print("loop")
+        # print("loop")
         # input()
         return 1
     arcs = matrix_to_edge(DAG_temp)
@@ -487,9 +487,9 @@ def detect_expections(CPDAG, collider_old):
         if vs in collider_old or vs_inverse in collider_old:
             pass
         else:
-            print("VS")
-            print("old: ", collider_old)
-            print("new: ", collider_new)
+            # print("VS")
+            # print("old: ", collider_old)
+            # print("new: ", collider_new)
             # input()
             return 2    
     return 0

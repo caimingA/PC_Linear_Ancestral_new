@@ -377,7 +377,7 @@ def get_ancestor_follow_skeleton(X, CPDAG, X_ng, l_alpha, i_alpha):
         model = lingam.DirectLiNGAM()
         model.fit(X_sub)
         x_0 = X_ng[model._causal_order[0]]
-    print(x_0)
+    # print(x_0)
     # if x_0 == -1:
     #     if len(unfinished_edge) == 0:
     #         unfinished_edge.append(record_pair)
@@ -475,7 +475,7 @@ def get_ancestor_follow_skeleton_2(X, CPDAG, X_ng, l_alpha, i_alpha):
                 reg = LinearRegression(fit_intercept=False)
                 x_data_reshaped = x_data.reshape(-1, 1)
                 y_data_reshaped = y_data.reshape(-1, 1)
-                print(CA)
+                # print(CA)
                 CA_list = np.array(CA, dtype=int)
                 CA_data = X[:, CA_list]
 
@@ -485,7 +485,7 @@ def get_ancestor_follow_skeleton_2(X, CPDAG, X_ng, l_alpha, i_alpha):
                 reg.fit(CA_data, y_data_reshaped)
                 y_data_on_CA = y_data - reg.predict(CA_data)
 
-                print(CA_data.shape, x_data_on_CA.type, y_data_on_CA.shape)
+                # print(CA_data.shape, x_data_on_CA.type, y_data_on_CA.shape)
                 res = get_ancestor_pairwise_KCI(x_data_on_CA , y_data_on_CA, l_alpha, i_alpha)
                 # if res == 0:
                 #     unfinished_edge.remove((i, j))
@@ -536,7 +536,7 @@ def get_ancestor_follow_skeleton_2(X, CPDAG, X_ng, l_alpha, i_alpha):
             reg = LinearRegression(fit_intercept=False)
             x_data_reshaped = x_data.reshape(-1, 1)
             y_data_reshaped = y_data.reshape(-1, 1)
-            print(CA)
+            # print(CA)
             CA_list = np.array(CA, dtype=int)
             CA_data = X[:, CA_list]
 
@@ -788,7 +788,7 @@ def get_ancestor_follow_skeleton_4(X, CPDAG, X_ng, l_alpha, i_alpha):
         model = lingam.DirectLiNGAM()
         model.fit(X_sub)
         x_0 = X_ng[model._causal_order[0]]
-    print(x_0)
+    # print(x_0)
     # if x_0 == -1:
     #     if len(unfinished_edge) == 0:
     #         unfinished_edge.append(record_pair)
@@ -831,6 +831,7 @@ def extract_Gaussian_and_nonGaussian(data, true_node_list, s_alpha):
     nonGaussian_list = []
 
     for i, node in enumerate(true_node_list):
+        # print(f"node: {node} is {is_gaussian(data[:, i], s_alpha)}")
         if is_gaussian(data[:, i], s_alpha):
             gaussian_list.append(node)
         else:

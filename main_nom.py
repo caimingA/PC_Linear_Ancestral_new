@@ -63,7 +63,9 @@ if __name__== '__main__':
                 true_CPDAG = utils.get_True_CPDAG(DAG_temp, change_list)
 
                 time_1 = time.perf_counter()
-                CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new(x_list_temp, DAG_temp, 0.05, 0.01, 0.001)
+                # CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new(x_list_temp, DAG_temp, 0.05, 0.01, 0.001)
+                # CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new(x_list_temp, true_CPDAG, 0.05, 0.01, 0.001)
+                CPDAG_proposed = ori.identify_direction_begin_with_CPDAG(x_list_temp, DAG_temp, 0.05, 0.01, 0.001)
                 CPDAG_proposed = utils.do_Meek_rule(CPDAG_proposed)
                 time_2 = time.perf_counter()
                 print("time proposed: ", time_2 - time_1)

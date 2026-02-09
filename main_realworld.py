@@ -4,6 +4,7 @@ import numpy as np
 import data_generator as dg
 import find_ancestor as fa
 import utils
+import utils_v2
 import find_skeleton as fs
 import copy
 
@@ -18,15 +19,19 @@ import networkx as nx
 
 import write_excel as we
 
-import orientation as ori
+# import orientation as ori
+import orientation_v3 as ori
 
-import PC_LiNGAM as PL
+# import PC_LiNGAM as PL
+import PC_LiNGAM_optimized as PL
 from causallearn.search.ConstraintBased.PC import pc
 
 import time
 
 import bnlearn as bn
 import xlwt
+
+from sklearn.preprocessing import StandardScaler
 
 # from IPython.display import Image
 # from pgmpy.utils import get_example_model
@@ -148,14 +153,18 @@ def write_excel(res_list, name):
     sheet3 = f.add_sheet('PL',cell_overwrite_ok=True)
     sheet4 = f.add_sheet('LiNGAM',cell_overwrite_ok=True)
     sheet5 = f.add_sheet('NoTears',cell_overwrite_ok=True)
-    sheet6 = f.add_sheet('RCD',cell_overwrite_ok=True)
+    sheet6 = f.add_sheet('proposed true',cell_overwrite_ok=True)
+    # sheet7 = f.add_sheet('PL true',cell_overwrite_ok=True)
+    # sheet6 = f.add_sheet('RCD',cell_overwrite_ok=True)
 
     res_PC = res_list[0]
     res_proposed = res_list[1]
     res_PL = res_list[2]
     res_L = res_list[3]
     res_notears = res_list[4]
-    res_rcd = res_list[5]
+    # res_rcd = res_list[5]
+    res_proposed_true = res_list[5]
+    res_PL_true = res_list[6]
     
     for i in range(len(res_PC)):
         for j in range(len(res_PC[0])):
@@ -177,9 +186,9 @@ def write_excel(res_list, name):
         for j in range(len(res_notears[0])):
             sheet5.write(i,j, res_notears[i][j])
 
-    for i in range(len(res_notears)):
-        for j in range(len(res_notears[0])):
-            sheet6.write(i,j, res_rcd[i][j])
+    for i in range(len(res_proposed_true)):
+        for j in range(len(res_proposed_true[0])):
+            sheet6.write(i,j, res_proposed_true[i][j])
 
     f.save(name + '.xls')
 
@@ -291,8 +300,8 @@ def evaluation_CPDAG(true_CPDAG, CPDAG):
 
     # pre = correct/(correct + red)
     # rec = correct/(correct + missing)
-    pre = correct/estimated_edges
-    rec = correct/true_edges
+    pre = correct/estimated_edges if estimated_edges != 0 else 0.0
+    rec = correct/true_edges if true_edges != 0 else 0.0
     F = 0
     if pre + rec == 0:
         F = 0
@@ -343,6 +352,14 @@ if __name__ == '__main__':
     #         [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0],
     #     ]
     # )
+    data_array_fmri_CPDAG_original = utils.get_True_CPDAG(data_array_fmri, [])
+    data_array_fmri_CPDAG_original.flags.writeable = False
+    data_array_fmri_CPDAG_original_temp = np.where(data_array_fmri_CPDAG_original== 1.0, 1.0, 0.0)
+    arcs_fmri_temp = utils.matrix_to_edge(data_array_fmri_CPDAG_original_temp)
+    g_fmri_temp = cd.DAG(arcs=arcs_fmri_temp)
+
+    collider_fmri_old = g_fmri_temp.vstructures()
+
     data_array_fmri_CPDAG = utils.get_True_CPDAG(data_array_fmri, [2])
     print(data_array_fmri_CPDAG)
     # input()
@@ -384,6 +401,13 @@ if __name__ == '__main__':
     #     for j in range(len(data_array_sachs_CPDAG)):
     #         if data_array_sachs_CPDAG[i][j] == 1:
     #             data_array_sachs_CPDAG[j][i] = -1
+    data_array_sachs_CPDAG_original = utils.get_True_CPDAG(data_array_sachs, [])
+    data_array_sachs_CPDAG_original.flags.writeable = False
+    data_array_sachs_CPDAG_original_temp = np.where(data_array_sachs_CPDAG_original== 1.0, 1.0, 0.0)
+    arcs_sachs_temp = utils.matrix_to_edge(data_array_sachs_CPDAG_original_temp)
+    g_sachs_temp = cd.DAG(arcs=arcs_sachs_temp)
+
+    collider_sachs_old = g_sachs_temp.vstructures()
 
     data_array_sachs_CPDAG = utils.get_True_CPDAG(data_array_sachs, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     data_array_fmri_CPDAG.flags.writeable = False
@@ -402,17 +426,21 @@ if __name__ == '__main__':
     current_time = time.localtime()
     formatted_time = time.strftime("%Y_%m_%d_%H_%M_%S", current_time)
     count = 0
-    res_list = [[] for i in range(6)]
-    res_list_sachs = [[] for i in range(6)]
+    res_list = [[] for i in range(7)]
+    res_list_sachs = [[] for i in range(7)]
     count_e_fmri = list()
     count_e_sachs = list()
 
     np.random.seed(2025)
-    for _ in range(1):
+    for _ in range(50):
         indices = np.random.choice(data_array_sachs_data.shape[0], 200, replace=False)
         data_array_sachs_data_temp = data_array_sachs_data[indices, : ]
+        scaler = StandardScaler()
+        data_array_sachs_data_temp = scaler.fit_transform(data_array_sachs_data_temp)
         indices = np.random.choice(data_array_fmri_data.shape[0], 100, replace=False)
         data_array_fmri_data_temp = data_array_fmri_data[indices, : ]
+        # scaler = StandardScaler()
+        # data_array_fmri_data_temp = scaler.fit_transform(data_array_fmri_data_temp)
         
         count += 1
         current_time = time.localtime()
@@ -435,6 +463,7 @@ if __name__ == '__main__':
         time_PC = (time_6 - time_5)
         CPDAG_PC = change_matrix(CPDAG_PC)
         
+        print(f"data: {data_array_fmri_data_temp[0]}")
         print(CPDAG_PC)
         print(data_array_fmri_CPDAG)
         print(evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_PC))
@@ -450,10 +479,13 @@ if __name__ == '__main__':
         print("=====================")
 
         time_3 = time.perf_counter()
-        CPDAG_PL = PL.PC_LiNGAM(data_array_fmri_data_temp, CPDAG_PC, 0.05)
+        # CPDAG_PL = PL.PC_LiNGAM(data_array_fmri_data_temp, CPDAG_PC, 0.05)
+        CPDAG_PL = PL.PC_LiNGAM_CPDAG(data_array_fmri_data_temp, CPDAG_PC, 0.05)
         CPDAG_PL = utils.do_Meek_rule(CPDAG_PL)
         time_4 = time.perf_counter()
         time_PL = (time_4 - time_3)
+        print(f"data: {data_array_fmri_data_temp[0]}")
+        print(f"CPDAG_PC: \n {CPDAG_PC}")
         print(CPDAG_PL)
         print(data_array_fmri_CPDAG)
         print(evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_PL))
@@ -476,8 +508,8 @@ if __name__ == '__main__':
         CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new(data_array_fmri_data_temp, CPDAG_PC, 0.05, 0.01, 0.001)
         
         # print(CPDAG_proposed)
-        CPDAG_proposed = utils.detect_exceptions_2(CPDAG_proposed, collider_old)
-        CPDAG_proposed = utils.do_Meek_rule(CPDAG_proposed)
+        CPDAG_proposed = utils_v2.detect_exceptions_2(CPDAG_proposed, collider_old)
+        CPDAG_proposed = utils_v2.do_Meek_rule(CPDAG_proposed)
         # print("new: \n", CPDAG_proposed_new)
         # temp_flag = utils.detect_expections(CPDAG_proposed_new, collider_old)
         # if temp_flag:
@@ -489,10 +521,12 @@ if __name__ == '__main__':
         time_2 = time.perf_counter()
         
         time_proposed = (time_2 - time_1)
-        print(CPDAG_proposed)
-        print(data_array_fmri_CPDAG)
-        print(evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_proposed))
-        print(time_proposed + time_PC)
+        # print(f"data: {data_array_fmri_data_temp[0]}")
+        # print(f"CPDAG_PC: \n {CPDAG_PC}")
+        # print(CPDAG_proposed)
+        # print(data_array_fmri_CPDAG)
+        # print(evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_proposed))
+        # print(time_proposed + time_PC)
         res_proposed = evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_proposed)
         res_proposed.append(time_proposed + time_PC)
         res_list[1].append(res_proposed)
@@ -512,10 +546,12 @@ if __name__ == '__main__':
             for j in range(len(DAG_L)):
                 if DAG_L[i][j] == 1.0:
                     DAG_L[j][i] = -1.0
-        print(DAG_L)
-        print(data_array_fmri_CPDAG)
-        print(evaluation_CPDAG(data_array_fmri_CPDAG, DAG_L))
-        print(time_L)
+        
+        # print(f"data: {data_array_fmri_data_temp[0]}")
+        # print(DAG_L)
+        # print(data_array_fmri_CPDAG)
+        # print(evaluation_CPDAG(data_array_fmri_CPDAG, DAG_L))
+        # print(time_L)
 
         res_L = evaluation_CPDAG(data_array_fmri_CPDAG, DAG_L)
         res_L.append(time_L)
@@ -532,43 +568,40 @@ if __name__ == '__main__':
             for j in range(len(DAG_notears)):
                 if DAG_notears[i][j] == 1.0:
                     DAG_notears[j][i] = -1.0
-        print(DAG_notears)
-        print(data_array_fmri_CPDAG)
-        print(evaluation_CPDAG(data_array_fmri_CPDAG, DAG_notears))
-        print(time_notears)
+        # print(f"data: {data_array_fmri_data_temp[0]}")
+        # print(DAG_notears)
+        # print(data_array_fmri_CPDAG)
+        # print(evaluation_CPDAG(data_array_fmri_CPDAG, DAG_notears))
+        # print(time_notears)
 
         res_notears = evaluation_CPDAG(data_array_fmri_CPDAG, DAG_notears)
         res_notears.append(time_notears)
         res_list[4].append(res_notears)
         
         
+        print("=====================")
         
+        time_11 = time.perf_counter()
+        # CPDAG_proposed_with_true = ori.identify_direction_begin_with_CPDAG_new_3(data_array_fmri_data_temp, data_array_fmri_CPDAG_original, 0.05, 0.01, 0.001)
+        # CPDAG_proposed_with_true = ori.identify_direction_begin_with_CPDAG_new_3(data_array_fmri_data_temp, data_array_fmri_CPDAG, 0.05, 0.01, 0.001)
+        CPDAG_proposed_with_true = ori.identify_direction_begin_with_CPDAG_new(data_array_fmri_data_temp, data_array_fmri_CPDAG_original, 0.05, 0.01, 0.01)
+        CPDAG_proposed_with_true = utils_v2.detect_exceptions_2(CPDAG_proposed_with_true, collider_fmri_old)
+        CPDAG_proposed_with_true = utils_v2.do_Meek_rule(CPDAG_proposed_with_true)
+
+        time_12 = time.perf_counter()
+
+        time_proposed_true = (time_12 - time_11)
+        print(f"data: {data_array_fmri_data_temp[0]}")
+        print(f"CPDAG_proposed_with_true: \n{CPDAG_proposed_with_true}")
+        print(f"data_array_fmri_CPDAG: \n{data_array_fmri_CPDAG}")
+        print(f"data_array_fmri_CPDAG_original: \n{data_array_fmri_CPDAG_original}")
+        print(evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_proposed_with_true))
+        print(time_proposed_true + time_PC)
+        res_proposed_true = evaluation_CPDAG(data_array_fmri_CPDAG, CPDAG_proposed_with_true)
+        res_proposed_true.append(time_proposed_true + time_PC)
+        res_list[5].append(res_proposed_true)
+        # draw.draw_CPDAG(CPDAG_proposed)
         print("======================")
-        
-        # time_11 = time.perf_counter()
-        # model = lingam.RCD()
-        # model.fit(data_array_fmri_data_temp)
-
-        # # W_est = notears_linear(data_array_fmri_data_temp, lambda1=0.1, loss_type='l2')
-        # # DAG_notears = np.where(W_est != 0.0, 1.0, 0.0)
-        # time_12 = time.perf_counter()
-        # time_rcd = (time_12 - time_11)
-        # DAG_rcd = model.adjacency_matrix_
-        # # print(DAG_L)
-        # print(DAG_rcd)
-        # DAG_rcd = np.nan_to_num(DAG_rcd, nan=0.0)
-        # for i in range(len(DAG_rcd)):
-        #     for j in range(len(DAG_rcd)):
-        #         if DAG_rcd[i][j] == 1.0:
-        #             DAG_rcd[j][i] = -1.0
-        # print(DAG_rcd)
-        # print(data_array_fmri_CPDAG)
-        # print(evaluation_CPDAG(data_array_fmri_CPDAG, DAG_rcd))
-        # print(time_rcd)
-
-        # res_rcd = evaluation_CPDAG(data_array_fmri_CPDAG, DAG_rcd)
-        # res_rcd.append(time_rcd)
-        # res_list[5].append(res_rcd)
 
         print("=====================")
         ##### sachs
@@ -589,6 +622,7 @@ if __name__ == '__main__':
 
         collider_old = g.vstructures()
 
+        print(f"data: {data_array_sachs_data_temp[0]}")
         print(CPDAG_PC)
         print(data_array_sachs_CPDAG)
         print(evaluation_CPDAG(data_array_sachs_CPDAG, CPDAG_PC))
@@ -600,10 +634,13 @@ if __name__ == '__main__':
     
         print("=====================")
         time_3 = time.perf_counter()
-        CPDAG_PL = PL.PC_LiNGAM(data_array_sachs_data_temp, CPDAG_PC, 0.05)
+        # CPDAG_PL = PL.PC_LiNGAM(data_array_sachs_data_temp, CPDAG_PC, 0.05)
+        CPDAG_PL = PL.PC_LiNGAM_CPDAG(data_array_sachs_data_temp, CPDAG_PC, 0.05)
         CPDAG_PL = utils.do_Meek_rule(CPDAG_PL)
         time_4 = time.perf_counter()
         time_PL = (time_4 - time_3)
+        print(f"data: {data_array_sachs_data_temp[0]}")
+        print(f"CPDAG_PC: \n {CPDAG_PC}")
         print(CPDAG_PL)
         print(data_array_sachs_CPDAG)
         print(evaluation_CPDAG(data_array_sachs_CPDAG, CPDAG_PL))
@@ -625,11 +662,13 @@ if __name__ == '__main__':
         print("=====================")
         # draw.draw_CPDAG(CPDAG_PC)
         time_1 = time.perf_counter()
-        CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new_3(data_array_sachs_data_temp, CPDAG_PC, 0.05, 0.01, 0.001)
+        # CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new_3(data_array_sachs_data_temp, CPDAG_PC, 0.05, 0.01, 0.001)
+        CPDAG_proposed = ori.identify_direction_begin_with_CPDAG_new(data_array_sachs_data_temp, CPDAG_PC, 0.05, 0.01, 0.001)
         # CPDAG_proposed = utils.do_Meek_rule(CPDAG_proposed)
-        print(CPDAG_proposed)
-        CPDAG_proposed = utils.detect_exceptions_2(CPDAG_proposed, collider_old)
-        CPDAG_proposed = utils.do_Meek_rule(CPDAG_proposed)
+        # print(f"data: {data_array_sachs_data_temp[0]}")
+        # print(CPDAG_proposed)
+        CPDAG_proposed = utils_v2.detect_exceptions_2(CPDAG_proposed, collider_old)
+        CPDAG_proposed = utils_v2.do_Meek_rule(CPDAG_proposed)
         # draw.draw_CPDAG(CPDAG_proposed)
         # print("new: \n", CPDAG_proposed)
         # temp_flag = utils.detect_expections(CPDAG_proposed_new, collider_old)
@@ -641,6 +680,8 @@ if __name__ == '__main__':
         time_2 = time.perf_counter()
         
         time_proposed = (time_2 - time_1)
+        print(f"data: {data_array_sachs_data_temp[0]}")
+        print(f"CPDAG_PC: \n {CPDAG_PC}")
         print(CPDAG_proposed)
         print(data_array_sachs_CPDAG)
         print(evaluation_CPDAG(data_array_sachs_CPDAG, CPDAG_proposed))
@@ -662,17 +703,19 @@ if __name__ == '__main__':
             for j in range(len(DAG_L)):
                 if DAG_L[i][j] == 1.0:
                     DAG_L[j][i] = -1.0
-        print(DAG_L)
-        print(data_array_sachs_CPDAG)
-        print(evaluation_CPDAG(data_array_sachs_CPDAG, DAG_L))
-        print(time_L)
+        
+        # print(f"data: {data_array_sachs_data_temp[0]}")
+        # print(DAG_L)
+        # print(data_array_sachs_CPDAG)
+        # print(evaluation_CPDAG(data_array_sachs_CPDAG, DAG_L))
+        # print(time_L)
         res_L = evaluation_CPDAG(data_array_sachs_CPDAG, DAG_L)
         res_L.append(time_L)
         res_list_sachs[3].append(res_L)
         # draw.draw_CPDAG(DAG_L)
         print("=====================")
         time_9 = time.perf_counter()
-        W_est = notears_linear(data_array_sachs_data_temp, lambda1=0.1, loss_type='l2')
+        W_est = notears_linear(data_array_sachs_data_temp, lambda1=0.01, loss_type='l2')
         DAG_notears = np.where(W_est != 0.0, 1.0, 0.0)
         time_10 = time.perf_counter()
         time_notears = (time_10 - time_9)
@@ -681,10 +724,11 @@ if __name__ == '__main__':
             for j in range(len(DAG_notears)):
                 if DAG_notears[i][j] == 1.0:
                     DAG_notears[j][i] = -1.0
-        print(DAG_notears)
-        print(data_array_fmri_CPDAG)
-        print(evaluation_CPDAG(data_array_sachs_CPDAG, DAG_notears))
-        print(time_notears)
+        # print(f"data: {data_array_sachs_data_temp[0]}")
+        # print(DAG_notears)
+        # print(data_array_fmri_CPDAG)
+        # print(evaluation_CPDAG(data_array_sachs_CPDAG, DAG_notears))
+        # print(time_notears)
 
         res_notears = evaluation_CPDAG(data_array_sachs_CPDAG, DAG_notears)
         res_notears.append(time_notears)
@@ -692,36 +736,32 @@ if __name__ == '__main__':
         
                 
         print("======================")
+        
+        time_11 = time.perf_counter()
+        # CPDAG_proposed_with_true = ori.identify_direction_begin_with_CPDAG_new(data_array_sachs_data_temp, data_array_sachs_CPDAG_original, 0.05, 0.01, 0.001)
+        CPDAG_proposed_with_true = ori.identify_direction_begin_with_CPDAG_new(data_array_sachs_data_temp, data_array_sachs_CPDAG_original, 0.05, 0.01, 0.001)
+        CPDAG_proposed_with_true = utils_v2.detect_exceptions_2(CPDAG_proposed_with_true, collider_sachs_old)
+        CPDAG_proposed_with_true = utils_v2.do_Meek_rule(CPDAG_proposed_with_true)
 
-        # time_11 = time.perf_counter()
-        # model = lingam.RCD()
-        # model.fit(data_array_sachs_data_temp)
+        time_12 = time.perf_counter()
 
-        # # W_est = notears_linear(data_array_fmri_data_temp, lambda1=0.1, loss_type='l2')
-        # # DAG_notears = np.where(W_est != 0.0, 1.0, 0.0)
-        # time_12 = time.perf_counter()
-        # time_rcd = (time_12 - time_11)
-        # DAG_rcd = model.adjacency_matrix_
-        # # print(DAG_L)
-        # DAG_rcd = np.nan_to_num(DAG_rcd, nan=0.0)
-        # print(DAG_rcd)
-        # for i in range(len(DAG_rcd)):
-        #     for j in range(len(DAG_rcd)):
-        #         if DAG_rcd[i][j] == 1.0:
-        #             DAG_rcd[j][i] = -1.0
-        # print(DAG_rcd)
-        # print(data_array_sachs_CPDAG)
-        # print(evaluation_CPDAG(data_array_sachs_CPDAG, DAG_rcd))
-        # print(time_rcd)
-
-        # res_rcd = evaluation_CPDAG(data_array_sachs_CPDAG, DAG_rcd)
-        # res_rcd.append(time_rcd)
-        # res_list[5].append(res_rcd)
-
+        time_proposed_true = (time_12 - time_11)
+        print(f"data: {data_array_sachs_data_temp[0]}")
+        print(f"CPDAG_proposed_with_true: \n{CPDAG_proposed_with_true}")
+        print(f"data_array_sachs_CPDAG: \n{data_array_sachs_CPDAG}")
+        print(f"data_array_sachs_CPDAG_original: \n{data_array_sachs_CPDAG_original}")
+        print(evaluation_CPDAG(data_array_sachs_CPDAG, CPDAG_proposed_with_true))
+        print(time_proposed_true + time_PC)
+        res_proposed_true = evaluation_CPDAG(data_array_sachs_CPDAG, CPDAG_proposed_with_true)
+        res_proposed_true.append(time_proposed_true + time_PC)
+        res_list_sachs[5].append(res_proposed_true)
+        # draw.draw_CPDAG(CPDAG_proposed)
         print("=====================")
+        
+        
 
-    # write_excel(res_list, "fmri_res_f"+formatted_time)
-    # write_excel(res_list_sachs, "sachs_res_f"+formatted_time)
+    write_excel(res_list, "fmri_res_f"+formatted_time)
+    write_excel(res_list_sachs, "sachs_res_f"+formatted_time)
 
     # print("fMRI: ", count_e_fmri)
     # print("Sachs: ", count_e_sachs)
